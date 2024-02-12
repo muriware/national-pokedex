@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { fetchPokemon } from "../lib/data";
+import Image from 'next/image';
+import { fetchPokemon } from '@/app/lib/data';
 
 export default async function ListItem({
   name,

@@ -1,5 +1,5 @@
-import { fetchNationalPokedex } from "./lib/data";
-import List from "./ui/list";
+import { fetchNationalPokedex } from '@/app/lib/data';
+import List from '@/app/ui/list';
 
 export default async function Page() {
   const { pokemon_entries } = await fetchNationalPokedex();

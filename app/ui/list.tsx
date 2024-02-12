@@ -1,5 +1,5 @@
-import { PokemonEntries } from "../lib/types";
-import ListItem from "./list-item";
+import { PokemonEntries } from '@/app/lib/types';
+import ListItem from '@/app/ui/list-item';
 
 export default function List({
   pokemonEntries,
