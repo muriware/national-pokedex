@@ -1,5 +1,6 @@
 import { PokemonEntries } from '@/app/lib/types';
 import ListItem from '@/app/ui/list-item';
+import { ListItemTombstone } from './tombstones';
 
 export default function List({
   pokemonEntries,
@@ -13,6 +14,7 @@ export default function List({
       {filteredList.map((pokemonEntry) => (
         <ListItem key={pokemonEntry.entry_number} pokemonEntry={pokemonEntry} />
       ))}
+      <ListItemTombstone />
     </div>
   );
 }
