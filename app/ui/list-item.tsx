@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { fetchPokemon } from '@/app/lib/data';
+import { PokemonEntry } from '@/app/lib/types';
 
 export default async function ListItem({
-  name,
+  pokemonEntry: { entry_number, pokemon_species: { name } }
 }: {
-  name: string;
+  pokemonEntry: PokemonEntry;
 }) {
   const { sprites } = await fetchPokemon(name);
 

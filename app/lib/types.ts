@@ -1,4 +1,4 @@
-type PokemonEntry = {
+export type PokemonEntry = {
   entry_number: number;
   pokemon_species: {
     name: string;

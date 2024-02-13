@@ -10,8 +10,8 @@ export default function List({
 
   return (
     <div>
-      {filteredList.map(({ entry_number, pokemon_species }) => (
-        <ListItem key={entry_number} name={pokemon_species.name} />
+      {filteredList.map((pokemonEntry) => (
+        <ListItem key={pokemonEntry.entry_number} pokemonEntry={pokemonEntry} />
       ))}
     </div>
   );
