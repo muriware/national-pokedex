@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { inter } from '@/app/ui/fonts';
+import { shareTechMono } from '@/app/ui/fonts';
 import '@/app/ui/globals.css';
 
 export const metadata: Metadata = {
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${shareTechMono.className} antialiased`}>{children}</body>
     </html>
   );
 }

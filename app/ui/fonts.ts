@@ -1,3 +1,6 @@
-import { Inter } from 'next/font/google';
+import { Share_Tech_Mono } from 'next/font/google';
 
-export const inter = Inter({ subsets: ['latin'] });
+export const shareTechMono = Share_Tech_Mono({
+  weight: ['400'],
+  subsets: ['latin'],
+});
