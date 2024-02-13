@@ -9,11 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        "sm": "480px",
+        "sm": "390px",
+        "md": "640px",
+        "lg": "900px",
+        "xl": "1112px",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/container-queries"),
+  ],
 };
 
 export default config;
