@@ -10,11 +10,11 @@ export default function List({
   const filteredList = pokemonEntries.slice(0, 20);
 
   return (
-    <div className='grid grid-cols-3 gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
+    <ul className='grid grid-cols-3 gap-5 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7'>
       {filteredList.map((pokemonEntry) => (
         <ListItem key={pokemonEntry.entry_number} pokemonEntry={pokemonEntry} />
       ))}
       <ListItemTombstone />
-    </div>
+    </ul>
   );
 }

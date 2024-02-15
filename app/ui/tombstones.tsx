@@ -1,6 +1,6 @@
 export function ListItemTombstone() {
   return (
-    <div className='w-full max-w-[165px] overflow-hidden'>
+    <li className='w-full max-w-[165px] overflow-hidden'>
       <div className='relative'>
         <div className='absolute h-full w-full origin-bottom scale-90 rounded-full bg-stone-400 drop-shadow-md' />
         <div className='relative z-10 origin-bottom scale-90'>
@@ -14,6 +14,6 @@ export function ListItemTombstone() {
       <div className='translate-x-[5%] @container md:translate-x-[10%]'>
         <span className='text-[24cqw] text-stone-400 drop-shadow-md md:text-[18cqw]'>----</span>
       </div>
-    </div>
+    </li>
   );
 }
