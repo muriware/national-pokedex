@@ -10,7 +10,7 @@ export default async function ListItem({
   const { sprites } = await fetchPokemon(name);
 
   return (
-    <div className='w-full overflow-hidden'>
+    <div className='w-full max-w-[165px] overflow-hidden'>
       <div className='relative'>
         <div className='absolute h-full w-full origin-bottom scale-90 rounded-full bg-stone-400 drop-shadow-md' />
         <Image
