@@ -20,5 +20,7 @@ type PokemonSprites = {
 };
 
 export type Pokemon = {
+  id: number;
+  name: string;
   sprites: PokemonSprites;
 };

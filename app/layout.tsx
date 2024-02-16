@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' className='size-full overflow-hidden'>
       <body className={`${shareTechMono.className} antialiased`}>{children}</body>
     </html>
   );
